@@ -93,6 +93,7 @@ void CArray<T>::Fill(T Value)
 template<typename T>
 void CArray<T>::PrintInfo(void)
 {
+	std::cout<<"[CArray]:"<<std::endl;
 	if(this->pArray == NULL)
 	{
 		std::cout<< "Sorry,the 'pArray' is NULL"<<std::endl;
@@ -157,6 +158,7 @@ CArray<T>& CArray<T>::operator=(CArray<T> &ArrayB)
 	this->pArray=ArrayB.pArray;
 	this->Length=ArrayB.Length;
 	ArrayB.pArray=NULL;
+
 	return *this;
 }
 

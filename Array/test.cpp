@@ -7,7 +7,7 @@
 
 #include"array.h"
 
-using DataStructure::CArray;
+using Array::CArray;
 
 int main(int argc,char **argv)
 {
@@ -17,11 +17,15 @@ int main(int argc,char **argv)
 //	ArrayA.PrintInfo();
 //	ArrayB.PrintInfo();
 	//Test for 'operator[]' function
+//	ArrayA.SetValue(0,100);
+//	ArrayA.SetValue(2,101);
 //	int Value0;
 //	int Value1;
 //	Value0=ArrayA[0];
-//	Value1=ArrayB[2];
+//	Value1=ArrayA[2];
+//	std::cout<<"Value0:"<<Value0<<std::endl<<"Value1:"<<Value1<<std::endl;
 	//Test for 'operator=' function
+//	ArrayA.PrintInfo();
 //	ArrayA=ArrayB;
 //	ArrayA.PrintInfo();
 	//Test for 'Fill()' function
@@ -35,7 +39,7 @@ int main(int argc,char **argv)
 	//Test for 'SetValue()' function
 //	ArrayA.SetValue(1,20);
 //	ArrayA.PrintInfo();
-	//Test for 'swap()' function
+//    //Test for 'swap()' function
 //	ArrayA.swap(0,1);
 //	ArrayA.PrintInfo();
 	//Test for 'Reverse()' function
@@ -44,8 +48,13 @@ int main(int argc,char **argv)
 	{
 		ArrayA.SetValue(i,i);
 	}
-	ArrayA.Reverse();
+//	ArrayA.PrintInfo();
+//	ArrayA.Reverse();
+//	ArrayA.PrintInfo();
 	ArrayA.PrintInfo();
+	ArrayB.PrintInfo();
+	ArrayB.CopyOfRange(ArrayA,0,Length-1);
+	ArrayB.PrintInfo();
 
 
 	return 0;
