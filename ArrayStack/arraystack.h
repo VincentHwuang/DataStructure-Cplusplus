@@ -43,6 +43,8 @@ class CArrayStack
 		virtual void Push(T NewElem);
 		//Method to remove an element of specified location and return it
 		virtual T Remove(int Index);
+		//Method to pop an element 
+		virtual T Pop();
 		//Method to clear the array
 		virtual void Clear();
 
@@ -98,10 +100,12 @@ template<typename T>
 void CArrayStack<T>::Resize()
 {
 	CArray<T> Temp(Max(2*Count,1));
-	for(int i=0;i<Count;i++)
-	{
-		Temp[i]=Array[i];
-	}
+//	for(int i=0;i<Count;i++)
+//	{
+//		Temp[i]=Array[i];
+//	}
+	//More efficient solution
+	std::copy(Array+0,Array+Count,Temp+0);
 	Array=Temp;
 }
 
@@ -117,10 +121,12 @@ void CArrayStack<T>::Add(int Index,T NewElem)
 	//Check if the Index is valid
 	assert(Index >=0);
 
-	for(int i=Count;i>Index;i--)
-	{
-		Array[i]=Array[i-1];
-	}
+//	for(int i=Count;i>Index;i--)
+//	{
+//		Array[i]=Array[i-1];
+//	}
+	//More efficient solution
+	std::copy_backward(Array+Index,Array+Count,Array+Count+1);
 
 	Array[Index]=NewElem;
 	Count++;
@@ -153,6 +159,12 @@ T CArrayStack<T>::Remove(int Index)
 	}
 
 	return Temp;
+}
+
+template<typename T> 
+T CArrayStack<T>::Pop()
+{
+	return Remove(Size()-1);
 }
 
 template<typename T>

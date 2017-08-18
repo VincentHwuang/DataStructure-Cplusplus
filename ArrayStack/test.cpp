@@ -34,8 +34,12 @@ int main(int argc,char **argv)
 //	std::cout<<BackCarrier<<std::endl;
 	//Test for 'Clear()'
 //	ArrayStackA.PrintInfo();
-	ArrayStackA.Clear();
-	ArrayStackA.PrintInfo();
+//	ArrayStackA.Clear();
+//	ArrayStackA.PrintInfo();
+	//Test for 'Pop()'
+//	std::cout<<ArrayStackA.Pop()<<std::endl;
+//	std::cout<<ArrayStackA.Pop()<<std::endl;
+//	ArrayStackA.PrintInfo();
 	
 
 
