@@ -36,7 +36,7 @@ class CArrayStack
 		//Method to set element of a specified location and return its original element
 		T Set(int Index,T NewElem);
 		//Debug function
-		void PrintInfo();
+//		void PrintInfo();
 		//Method to add an element to specified location
 		virtual void Add(int Index,T NewElem);
 		//Method to push an element
@@ -86,15 +86,15 @@ T CArrayStack<T>::Set(int Index,T NewElem)
 	return Temp;
 }
 
-template<typename T>
-void CArrayStack<T>::PrintInfo() 
-{
-	std::cout<<"[CArrayStack]:"<<std::endl;
-	Array.PrintInfo();
-	std::cout<<"The actual count of elements is:"<<Count<<std::endl;
-
-	return;
-}
+//template<typename T>
+//void CArrayStack<T>::PrintInfo() 
+//{
+//	std::cout<<"[CArrayStack]:"<<std::endl;
+//	Array.PrintInfo();
+//	std::cout<<"The actual count of elements is:"<<Count<<std::endl;
+//
+//	return;
+//}
 
 template<typename T>
 void CArrayStack<T>::Resize()

@@ -30,7 +30,7 @@ class CArray
 		//Method to fill each value in 'pArray' with 'Value'
 		void Fill(T value);
 		//Debug function
-//		void PrintInfo(void);
+		void PrintInfo(void);
 		//Method to set value of specified location
 		void SetValue(int Index,T Value);
 		//Destructor function
@@ -90,25 +90,25 @@ void CArray<T>::Fill(T Value)
 	return;
 }
 
-//template<typename T>
-//void CArray<T>::PrintInfo(void)
-//{
-//	if(this->pArray == NULL)
-//	{
-//		std::cout<< "Sorry,the 'pArray' is NULL"<<std::endl;
-//	}
-//	else
-//	{
-//		std::cout<<"The address of the array is:"<<this->pArray<<std::endl;
-//		std::cout<<"The Length of the array is:"<<this->Length<<std::endl<<"The datas stored in the array are:"<<std::endl;
-//		for(int i=0;i<(this->Length);i++)
-//		{
-//			std::cout<<pArray[i]<<std::endl;
-//		}
-//	}
-//
-//	return;
-//}
+template<typename T>
+void CArray<T>::PrintInfo(void)
+{
+	if(this->pArray == NULL)
+	{
+		std::cout<< "Sorry,the 'pArray' is NULL"<<std::endl;
+	}
+	else
+	{
+		std::cout<<"The address of the array is:"<<this->pArray<<std::endl;
+		std::cout<<"The Length of the array is:"<<this->Length<<std::endl<<"The datas stored in the array are:"<<std::endl;
+		for(int i=0;i<(this->Length);i++)
+		{
+			std::cout<<pArray[i]<<std::endl;
+		}
+	}
+
+	return;
+}
 
 template<typename T>
 void CArray<T>::SetValue(int Index,T Value)
