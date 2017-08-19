@@ -1,0 +1,72 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARRAYDEQUE_H	arraydeque.h	8;"	d
+ARRAY_H	array.h	8;"	d
+Array	array.h	/^namespace Array $/;"	n
+Array::CArray	array.h	/^class CArray $/;"	c	namespace:Array
+Array::CArray::CArray	array.h	/^		CArray(int LengthValue);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue)
+Array::CArray::CArray	array.h	/^		CArray(int LengthValue,T Initialization);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue,T Initialization)
+Array::CArray::CArray	array.h	/^CArray<T>::CArray(int LengthValue)$/;"	f	class:Array::CArray	signature:(int LengthValue)
+Array::CArray::CArray	array.h	/^CArray<T>::CArray(int LengthValue,T Initialization)$/;"	f	class:Array::CArray	signature:(int LengthValue,T Initialization)
+Array::CArray::CopyOfRange	array.h	/^		void CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+Array::CArray::CopyOfRange	array.h	/^void CArray<T>::CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex)$/;"	f	class:Array::CArray	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+Array::CArray::Fill	array.h	/^		void Fill(T value);$/;"	p	class:Array::CArray	access:public	signature:(T value)
+Array::CArray::Fill	array.h	/^void CArray<T>::Fill(T Value)$/;"	f	class:Array::CArray	signature:(T Value)
+Array::CArray::Length	array.h	/^		int Length;$/;"	m	class:Array::CArray	access:public
+Array::CArray::PrintInfo	array.h	/^		void PrintInfo(void);$/;"	p	class:Array::CArray	access:public	signature:(void)
+Array::CArray::PrintInfo	array.h	/^void CArray<T>::PrintInfo(void)$/;"	f	class:Array::CArray	signature:(void)
+Array::CArray::Reverse	array.h	/^		virtual void Reverse();$/;"	p	class:Array::CArray	access:public	signature:()
+Array::CArray::Reverse	array.h	/^void CArray<T>::Reverse()$/;"	f	class:Array::CArray	signature:()
+Array::CArray::SetValue	array.h	/^		void SetValue(int Index,T Value);$/;"	p	class:Array::CArray	access:public	signature:(int Index,T Value)
+Array::CArray::SetValue	array.h	/^void CArray<T>::SetValue(int Index,T Value)$/;"	f	class:Array::CArray	signature:(int Index,T Value)
+Array::CArray::operator +	array.h	/^		T* operator+(int i);$/;"	p	class:Array::CArray	access:public	signature:(int i)
+Array::CArray::operator +	array.h	/^T* CArray<T>::operator+(int i)$/;"	f	class:Array::CArray	signature:(int i)
+Array::CArray::operator =	array.h	/^		CArray<T>& operator=(CArray<T> &ArrayB);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &ArrayB)
+Array::CArray::operator =	array.h	/^CArray<T>& CArray<T>::operator=(CArray<T> &ArrayB)$/;"	f	class:Array::CArray	signature:(CArray<T> &ArrayB)
+Array::CArray::operator []	array.h	/^		T& operator[](int Index);$/;"	p	class:Array::CArray	access:public	signature:(int Index)
+Array::CArray::operator []	array.h	/^T& CArray<T>::operator[](int Index)$/;"	f	class:Array::CArray	signature:(int Index)
+Array::CArray::pArray	array.h	/^		T *pArray;$/;"	m	class:Array::CArray	access:protected
+Array::CArray::swap	array.h	/^		void swap(int i,int j);$/;"	p	class:Array::CArray	access:public	signature:(int i,int j)
+Array::CArray::swap	array.h	/^void CArray<T>::swap(int i,int j)$/;"	f	class:Array::CArray	signature:(int i,int j)
+Array::CArray::~CArray	array.h	/^		virtual ~CArray();$/;"	p	class:Array::CArray	access:public	signature:()
+Array::CArray::~CArray	array.h	/^CArray<T>::~CArray()$/;"	f	class:Array::CArray	signature:()
+ArrayDeque	arraydeque.h	/^namespace ArrayDeque$/;"	n
+ArrayDeque::CArrayDeque	arraydeque.h	/^class CArrayDeque$/;"	c	namespace:ArrayDeque
+CArray	array.h	/^		CArray(int LengthValue);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue)
+CArray	array.h	/^		CArray(int LengthValue,T Initialization);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue,T Initialization)
+CArray	array.h	/^CArray<T>::CArray(int LengthValue)$/;"	f	class:Array::CArray	signature:(int LengthValue)
+CArray	array.h	/^CArray<T>::CArray(int LengthValue,T Initialization)$/;"	f	class:Array::CArray	signature:(int LengthValue,T Initialization)
+CArray	array.h	/^class CArray $/;"	c	namespace:Array
+CArrayDeque	arraydeque.h	/^class CArrayDeque$/;"	c	namespace:ArrayDeque
+CopyOfRange	array.h	/^		void CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+CopyOfRange	array.h	/^void CArray<T>::CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex)$/;"	f	class:Array::CArray	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+Fill	array.h	/^		void Fill(T value);$/;"	p	class:Array::CArray	access:public	signature:(T value)
+Fill	array.h	/^void CArray<T>::Fill(T Value)$/;"	f	class:Array::CArray	signature:(T Value)
+Length	array.h	/^		int Length;$/;"	m	class:Array::CArray	access:public
+Max	utils.h	/^T Max(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+Min	utils.h	/^T Min(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+PrintInfo	array.h	/^		void PrintInfo(void);$/;"	p	class:Array::CArray	access:public	signature:(void)
+PrintInfo	array.h	/^void CArray<T>::PrintInfo(void)$/;"	f	class:Array::CArray	signature:(void)
+Reverse	array.h	/^		virtual void Reverse();$/;"	p	class:Array::CArray	access:public	signature:()
+Reverse	array.h	/^void CArray<T>::Reverse()$/;"	f	class:Array::CArray	signature:()
+SetValue	array.h	/^		void SetValue(int Index,T Value);$/;"	p	class:Array::CArray	access:public	signature:(int Index,T Value)
+SetValue	array.h	/^void CArray<T>::SetValue(int Index,T Value)$/;"	f	class:Array::CArray	signature:(int Index,T Value)
+UTILS_H	utils.h	8;"	d
+Utility	utils.h	/^namespace Utility$/;"	n
+Utility::Max	utils.h	/^T Max(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+Utility::Min	utils.h	/^T Min(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+operator +	array.h	/^		T* operator+(int i);$/;"	p	class:Array::CArray	access:public	signature:(int i)
+operator +	array.h	/^T* CArray<T>::operator+(int i)$/;"	f	class:Array::CArray	signature:(int i)
+operator =	array.h	/^		CArray<T>& operator=(CArray<T> &ArrayB);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &ArrayB)
+operator =	array.h	/^CArray<T>& CArray<T>::operator=(CArray<T> &ArrayB)$/;"	f	class:Array::CArray	signature:(CArray<T> &ArrayB)
+operator []	array.h	/^		T& operator[](int Index);$/;"	p	class:Array::CArray	access:public	signature:(int Index)
+operator []	array.h	/^T& CArray<T>::operator[](int Index)$/;"	f	class:Array::CArray	signature:(int Index)
+pArray	array.h	/^		T *pArray;$/;"	m	class:Array::CArray	access:protected
+swap	array.h	/^		void swap(int i,int j);$/;"	p	class:Array::CArray	access:public	signature:(int i,int j)
+swap	array.h	/^void CArray<T>::swap(int i,int j)$/;"	f	class:Array::CArray	signature:(int i,int j)
+~CArray	array.h	/^		virtual ~CArray();$/;"	p	class:Array::CArray	access:public	signature:()
+~CArray	array.h	/^CArray<T>::~CArray()$/;"	f	class:Array::CArray	signature:()
