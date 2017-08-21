@@ -35,6 +35,16 @@ class CArrayDeque
 		virtual void EnqueueE(T NewElem);
 		//Method to enqueue an element at the first
 		virtual void EnqueueF(T NewElem);
+		//Method to dequeue an element at the first
+		virtual T DequeueF();
+		//Method to dequeue an element at the end
+		virtual T DequeueE();
+		//Method to set element of specified location
+		//and return its original value
+		T Set(int Index,T NewElem);
+		//Method to clear the deque
+		virtual void Clear();
+
 		void PrintInfo();
 };
 
@@ -97,6 +107,46 @@ void CArrayDeque<T>::EnqueueF(T NewElem)
 	IndexFlag=(IndexFlag==0)? (Array.Length-1):(IndexFlag-1);
 	Array[IndexFlag]=NewElem;
 	Count++;
+}
+
+template<typename T>
+T CArrayDeque<T>::Set(int Index,T NewElem)
+{
+	//Check if the index is valid
+	assert(Index>=0 && Index<Count);
+
+	T Temp=Array[(IndexFlag+Index)%(Array.Length)];
+	Array[(IndexFlag+Index)%(Array.Length)]=NewElem;
+
+	return Temp;
+}
+
+template<typename T>
+void CArrayDeque<T>::Clear()
+{
+	CArray<T> Temp{1,0};
+	Array=Temp;
+	IndexFlag=0;
+	Count=0;
+}
+
+template<typename T>
+T CArrayDeque<T>::DequeueF()
+{
+	T Temp=Array[IndexFlag];
+	IndexFlag=(IndexFlag+1)%(Array.Length);
+	Count--;
+
+	return Temp;
+}
+
+template<typename T>
+T CArrayDeque<T>::DequeueE()
+{
+	T Temp=Array[(IndexFlag+Count-1)%(Array.Length)];
+	Count--;
+
+	return Temp;
 }
 
 template<typename T>
