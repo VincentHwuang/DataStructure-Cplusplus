@@ -41,6 +41,8 @@ class CDoubleLinkedList
         //Method to add new element before specified node
         //and return the new added node
         Node *AddBefore(Node* pNode,T NewData);
+		//Method to remove a node
+		void Remove(Node *pNode);
         
         public:
         //Constructor function
@@ -51,10 +53,18 @@ class CDoubleLinkedList
         int Size() {return Length;}
         //Method to get data of specified location
         T Get(int Index);
+		//Method to modify an element of specified 
+		//and return its original data
+		T Set(int Index,T NewElem);
         //Method to add an element at specified location
         virtual void Add(int Index,T NewElem);
+		//Method to add an element at the end 
+		virtual void Add(T NewElem) { Add(Size(),NewElem);}
 		//Method to clear the list
 		virtual void Clear();
+		//Method to remove an element of specified location
+		//and return the element
+		T Remove(int Index);
 		//Debug function
         void PrintListInfo();
 		//Debug function
@@ -147,6 +157,38 @@ class CDoubleLinkedList
 			delete pCurrentNode;
 			pCurrentNode=pTemp;
 		}
+		Dummy.pPrev=&Dummy;
+		Dummy.pNext=&Dummy;
+		Length=0;
+	}
+
+	template<typename T>
+	void CDoubleLinkedList<T>::Remove(Node *pNode)
+	{
+		pNode->pPrev->pNext=pNode->pNext;
+		pNode->pNext->pPrev=pNode->pPrev;
+		delete pNode;
+		Length--;
+	}
+
+	template<typename T>
+	T CDoubleLinkedList<T>::Remove(int Index)
+	{
+		Node *pNode=GetNode(Index);
+		T     Temp=pNode->Data;
+		Remove(pNode);
+		
+		return Temp;
+	}	
+
+	template<typename T>
+	T CDoubleLinkedList<T>::Set(int Index,T NewElem)
+	{
+		Node *pNode=GetNode(Index);
+		T     Temp=pNode->Data;
+		pNode->Data=NewElem;
+
+		return Temp;
 	}
 
 	template<typename T>
