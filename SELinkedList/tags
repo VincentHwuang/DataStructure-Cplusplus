@@ -1,0 +1,190 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARRAYDEQUE_H	arraydeque.h	8;"	d
+ARRAY_H	array.h	8;"	d
+Add	arraydeque.h	/^		void Add(int Index,T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(int Index,T NewElem)
+Add	arraydeque.h	/^void CArrayDeque<T>::Add(int Index,T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(int Index,T NewElem)
+Add	selinkedlist.h	/^			virtual bool Add(T NewElem)$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:(T NewElem)
+Add	selinkedlist.h	/^			virtual void Add(int Index,T NewElem)$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:(int Index,T NewElem)
+AddBefore	selinkedlist.h	/^	CNode *AddBefore(CNode *pNode)$/;"	f	class:ds::CSELinkedList	access:protected	signature:(CNode *pNode)
+Array	array.h	/^namespace Array $/;"	n
+Array	arraydeque.h	/^		CArray<T> Array;$/;"	m	class:ds::CArrayDeque	access:protected
+Array::CArray	array.h	/^class CArray $/;"	c	namespace:Array
+Array::CArray::CArray	array.h	/^		CArray(int LengthValue);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue)
+Array::CArray::CArray	array.h	/^		CArray(int LengthValue,T Initialization);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue,T Initialization)
+Array::CArray::CArray	array.h	/^CArray<T>::CArray(int LengthValue)$/;"	f	class:Array::CArray	signature:(int LengthValue)
+Array::CArray::CArray	array.h	/^CArray<T>::CArray(int LengthValue,T Initialization)$/;"	f	class:Array::CArray	signature:(int LengthValue,T Initialization)
+Array::CArray::CopyOfRange	array.h	/^		void CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+Array::CArray::CopyOfRange	array.h	/^void CArray<T>::CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex)$/;"	f	class:Array::CArray	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+Array::CArray::Fill	array.h	/^		void Fill(T value);$/;"	p	class:Array::CArray	access:public	signature:(T value)
+Array::CArray::Fill	array.h	/^void CArray<T>::Fill(T Value)$/;"	f	class:Array::CArray	signature:(T Value)
+Array::CArray::Length	array.h	/^		int Length;$/;"	m	class:Array::CArray	access:public
+Array::CArray::PrintInfo	array.h	/^		void PrintInfo(void);$/;"	p	class:Array::CArray	access:public	signature:(void)
+Array::CArray::PrintInfo	array.h	/^void CArray<T>::PrintInfo(void)$/;"	f	class:Array::CArray	signature:(void)
+Array::CArray::Reverse	array.h	/^		virtual void Reverse();$/;"	p	class:Array::CArray	access:public	signature:()
+Array::CArray::Reverse	array.h	/^void CArray<T>::Reverse()$/;"	f	class:Array::CArray	signature:()
+Array::CArray::SetValue	array.h	/^		void SetValue(int Index,T Value);$/;"	p	class:Array::CArray	access:public	signature:(int Index,T Value)
+Array::CArray::SetValue	array.h	/^void CArray<T>::SetValue(int Index,T Value)$/;"	f	class:Array::CArray	signature:(int Index,T Value)
+Array::CArray::operator +	array.h	/^		T* operator+(int i);$/;"	p	class:Array::CArray	access:public	signature:(int i)
+Array::CArray::operator +	array.h	/^T* CArray<T>::operator+(int i)$/;"	f	class:Array::CArray	signature:(int i)
+Array::CArray::operator =	array.h	/^		CArray<T>& operator=(CArray<T> &ArrayB);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &ArrayB)
+Array::CArray::operator =	array.h	/^CArray<T>& CArray<T>::operator=(CArray<T> &ArrayB)$/;"	f	class:Array::CArray	signature:(CArray<T> &ArrayB)
+Array::CArray::operator []	array.h	/^		T& operator[](int Index);$/;"	p	class:Array::CArray	access:public	signature:(int Index)
+Array::CArray::operator []	array.h	/^T& CArray<T>::operator[](int Index)$/;"	f	class:Array::CArray	signature:(int Index)
+Array::CArray::pArray	array.h	/^		T *pArray;$/;"	m	class:Array::CArray	access:protected
+Array::CArray::swap	array.h	/^		void swap(int i,int j);$/;"	p	class:Array::CArray	access:public	signature:(int i,int j)
+Array::CArray::swap	array.h	/^void CArray<T>::swap(int i,int j)$/;"	f	class:Array::CArray	signature:(int i,int j)
+Array::CArray::~CArray	array.h	/^		virtual ~CArray();$/;"	p	class:Array::CArray	access:public	signature:()
+Array::CArray::~CArray	array.h	/^CArray<T>::~CArray()$/;"	f	class:Array::CArray	signature:()
+BlockNumber	selinkedlist.h	/^	int BlockNumber;$/;"	m	class:ds::CSELinkedList	access:protected
+CArray	array.h	/^		CArray(int LengthValue);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue)
+CArray	array.h	/^		CArray(int LengthValue,T Initialization);$/;"	p	class:Array::CArray	access:public	signature:(int LengthValue,T Initialization)
+CArray	array.h	/^CArray<T>::CArray(int LengthValue)$/;"	f	class:Array::CArray	signature:(int LengthValue)
+CArray	array.h	/^CArray<T>::CArray(int LengthValue,T Initialization)$/;"	f	class:Array::CArray	signature:(int LengthValue,T Initialization)
+CArray	array.h	/^class CArray $/;"	c	namespace:Array
+CArrayDeque	arraydeque.h	/^		CArrayDeque();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+CArrayDeque	arraydeque.h	/^CArrayDeque<T>::CArrayDeque() : Array(1)$/;"	f	class:ds::CArrayDeque	signature:()
+CArrayDeque	arraydeque.h	/^class CArrayDeque$/;"	c	namespace:ds
+CBDeque	selinkedlist.h	/^			CBDeque(int BlockNumber)$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:(int BlockNumber)
+CBDeque	selinkedlist.h	/^	class CBDeque : public CArrayDeque<T>$/;"	c	class:ds::CSELinkedList	inherits:CArrayDeque	access:protected
+CLocation	selinkedlist.h	/^	class CLocation$/;"	c	class:ds::CSELinkedList	access:protected
+CNode	selinkedlist.h	/^			CNode(int BlockNumber) : Deque(BlockNumber) {}$/;"	f	class:ds::CSELinkedList::CNode	access:public	signature:(int BlockNumber)
+CNode	selinkedlist.h	/^	class CNode$/;"	c	class:ds::CSELinkedList	access:protected
+CSELinkedList	selinkedlist.h	/^	CSELinkedList(int BlockNumber) : Dummy(BlockNumber)$/;"	f	class:ds::CSELinkedList	access:public	signature:(int BlockNumber)
+CSELinkedList	selinkedlist.h	/^class CSELinkedList$/;"	c	namespace:ds
+Clear	arraydeque.h	/^		virtual void Clear();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+Clear	arraydeque.h	/^void CArrayDeque<T>::Clear()$/;"	f	class:ds::CArrayDeque	signature:()
+Clear	selinkedlist.h	/^	virtual void Clear()$/;"	f	class:ds::CSELinkedList	access:public	signature:()
+CopyOfRange	array.h	/^		void CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+CopyOfRange	array.h	/^void CArray<T>::CopyOfRange(CArray<T> &SourceArray,int StartIndex,int EndIndex)$/;"	f	class:Array::CArray	signature:(CArray<T> &SourceArray,int StartIndex,int EndIndex)
+Count	arraydeque.h	/^		int       Count;$/;"	m	class:ds::CArrayDeque	access:protected
+Count	selinkedlist.h	/^	int Count;$/;"	m	class:ds::CSELinkedList	access:protected
+Deque	selinkedlist.h	/^			CBDequeu Deque;$/;"	m	class:ds::CSELinkedList::CNode	access:public
+DequeueE	arraydeque.h	/^		virtual T DequeueE();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+DequeueE	arraydeque.h	/^T CArrayDeque<T>::DequeueE()$/;"	f	class:ds::CArrayDeque	signature:()
+DequeueF	arraydeque.h	/^		virtual T DequeueF();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+DequeueF	arraydeque.h	/^T CArrayDeque<T>::DequeueF()$/;"	f	class:ds::CArrayDeque	signature:()
+Dummy	selinkedlist.h	/^	CNode Dummy;$/;"	m	class:ds::CSELinkedList	access:protected
+EnqueueE	arraydeque.h	/^		virtual void EnqueueE(T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(T NewElem)
+EnqueueE	arraydeque.h	/^void CArrayDeque<T>::EnqueueE(T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(T NewElem)
+EnqueueF	arraydeque.h	/^		virtual void EnqueueF(T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(T NewElem)
+EnqueueF	arraydeque.h	/^void CArrayDeque<T>::EnqueueF(T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(T NewElem)
+Fill	array.h	/^		void Fill(T value);$/;"	p	class:Array::CArray	access:public	signature:(T value)
+Fill	array.h	/^void CArray<T>::Fill(T Value)$/;"	f	class:Array::CArray	signature:(T Value)
+Get	arraydeque.h	/^		T Get(int Index);$/;"	p	class:ds::CArrayDeque	access:public	signature:(int Index)
+Get	arraydeque.h	/^T CArrayDeque<T>::Get(int Index)$/;"	f	class:ds::CArrayDeque	signature:(int Index)
+Get	selinkedlist.h	/^	T Get(int Index)$/;"	f	class:ds::CSELinkedList	access:public	signature:(int Index)
+GetLocation	selinkedlist.h	/^	void GetLocation(int Index,Location &Effl)$/;"	f	class:ds::CSELinkedList	access:protected	signature:(int Index,Location &Effl)
+Index	selinkedlist.h	/^			int    Index;$/;"	m	class:ds::CSELinkedList::CLocation	access:public
+IndexFlag	arraydeque.h	/^		int       IndexFlag;$/;"	m	class:ds::CArrayDeque	access:protected
+Length	array.h	/^		int Length;$/;"	m	class:Array::CArray	access:public
+Location	selinkedlist.h	/^			Location() {}$/;"	f	class:ds::CSELinkedList::CLocation	access:public	signature:()
+Location	selinkedlist.h	/^			Location(CNode *pNode,int Index)$/;"	f	class:ds::CSELinkedList::CLocation	access:public	signature:(CNode *pNode,int Index)
+Max	utils.h	/^T Max(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+Min	utils.h	/^T Min(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+PrintInfo	array.h	/^		void PrintInfo(void);$/;"	p	class:Array::CArray	access:public	signature:(void)
+PrintInfo	array.h	/^void CArray<T>::PrintInfo(void)$/;"	f	class:Array::CArray	signature:(void)
+PrintInfo	arraydeque.h	/^		void PrintInfo();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+PrintInfo	arraydeque.h	/^void CArrayDeque<T>::PrintInfo()$/;"	f	class:ds::CArrayDeque	signature:()
+Remove	selinkedlist.h	/^	void Remove(CNode *pNode)$/;"	f	class:ds::CSELinkedList	access:protected	signature:(CNode *pNode)
+Resize	arraydeque.h	/^		void      Resize();$/;"	p	class:ds::CArrayDeque	access:protected	signature:()
+Resize	arraydeque.h	/^void CArrayDeque<T>::Resize()$/;"	f	class:ds::CArrayDeque	signature:()
+Resize	selinkedlist.h	/^			void Resize() {}$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:()
+Reverse	array.h	/^		virtual void Reverse();$/;"	p	class:Array::CArray	access:public	signature:()
+Reverse	array.h	/^void CArray<T>::Reverse()$/;"	f	class:Array::CArray	signature:()
+SELINKEDLIST_H	selinkedlist.h	8;"	d
+Set	arraydeque.h	/^		T Set(int Index,T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(int Index,T NewElem)
+Set	arraydeque.h	/^T CArrayDeque<T>::Set(int Index,T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(int Index,T NewElem)
+Set	selinkedlist.h	/^	T Set(int Index,T NewElem)$/;"	f	class:ds::CSELinkedList	access:public	signature:(int Index,T NewElem)
+SetValue	array.h	/^		void SetValue(int Index,T Value);$/;"	p	class:Array::CArray	access:public	signature:(int Index,T Value)
+SetValue	array.h	/^void CArray<T>::SetValue(int Index,T Value)$/;"	f	class:Array::CArray	signature:(int Index,T Value)
+Size	arraydeque.h	/^		int Size();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+Size	arraydeque.h	/^int CArrayDeque<T>::Size()$/;"	f	class:ds::CArrayDeque	signature:()
+Size	selinkedlist.h	/^	int Size()$/;"	f	class:ds::CSELinkedList	access:public	signature:()
+UTILS_H	utils.h	8;"	d
+Utility	utils.h	/^namespace Utility$/;"	n
+Utility::Max	utils.h	/^T Max(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+Utility::Min	utils.h	/^T Min(T a,T b)$/;"	f	namespace:Utility	signature:(T a,T b)
+ds	arraydeque.h	/^namespace ds $/;"	n
+ds	selinkedlist.h	/^namespace ds$/;"	n
+ds::CArrayDeque	arraydeque.h	/^class CArrayDeque$/;"	c	namespace:ds
+ds::CArrayDeque::Add	arraydeque.h	/^		void Add(int Index,T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(int Index,T NewElem)
+ds::CArrayDeque::Add	arraydeque.h	/^void CArrayDeque<T>::Add(int Index,T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(int Index,T NewElem)
+ds::CArrayDeque::Array	arraydeque.h	/^		CArray<T> Array;$/;"	m	class:ds::CArrayDeque	access:protected
+ds::CArrayDeque::CArrayDeque	arraydeque.h	/^		CArrayDeque();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+ds::CArrayDeque::CArrayDeque	arraydeque.h	/^CArrayDeque<T>::CArrayDeque() : Array(1)$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CArrayDeque::Clear	arraydeque.h	/^		virtual void Clear();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+ds::CArrayDeque::Clear	arraydeque.h	/^void CArrayDeque<T>::Clear()$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CArrayDeque::Count	arraydeque.h	/^		int       Count;$/;"	m	class:ds::CArrayDeque	access:protected
+ds::CArrayDeque::DequeueE	arraydeque.h	/^		virtual T DequeueE();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+ds::CArrayDeque::DequeueE	arraydeque.h	/^T CArrayDeque<T>::DequeueE()$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CArrayDeque::DequeueF	arraydeque.h	/^		virtual T DequeueF();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+ds::CArrayDeque::DequeueF	arraydeque.h	/^T CArrayDeque<T>::DequeueF()$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CArrayDeque::EnqueueE	arraydeque.h	/^		virtual void EnqueueE(T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(T NewElem)
+ds::CArrayDeque::EnqueueE	arraydeque.h	/^void CArrayDeque<T>::EnqueueE(T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(T NewElem)
+ds::CArrayDeque::EnqueueF	arraydeque.h	/^		virtual void EnqueueF(T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(T NewElem)
+ds::CArrayDeque::EnqueueF	arraydeque.h	/^void CArrayDeque<T>::EnqueueF(T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(T NewElem)
+ds::CArrayDeque::Get	arraydeque.h	/^		T Get(int Index);$/;"	p	class:ds::CArrayDeque	access:public	signature:(int Index)
+ds::CArrayDeque::Get	arraydeque.h	/^T CArrayDeque<T>::Get(int Index)$/;"	f	class:ds::CArrayDeque	signature:(int Index)
+ds::CArrayDeque::IndexFlag	arraydeque.h	/^		int       IndexFlag;$/;"	m	class:ds::CArrayDeque	access:protected
+ds::CArrayDeque::PrintInfo	arraydeque.h	/^		void PrintInfo();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+ds::CArrayDeque::PrintInfo	arraydeque.h	/^void CArrayDeque<T>::PrintInfo()$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CArrayDeque::Resize	arraydeque.h	/^		void      Resize();$/;"	p	class:ds::CArrayDeque	access:protected	signature:()
+ds::CArrayDeque::Resize	arraydeque.h	/^void CArrayDeque<T>::Resize()$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CArrayDeque::Set	arraydeque.h	/^		T Set(int Index,T NewElem);$/;"	p	class:ds::CArrayDeque	access:public	signature:(int Index,T NewElem)
+ds::CArrayDeque::Set	arraydeque.h	/^T CArrayDeque<T>::Set(int Index,T NewElem)$/;"	f	class:ds::CArrayDeque	signature:(int Index,T NewElem)
+ds::CArrayDeque::Size	arraydeque.h	/^		int Size();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+ds::CArrayDeque::Size	arraydeque.h	/^int CArrayDeque<T>::Size()$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CArrayDeque::~CArrayDeque	arraydeque.h	/^		virtual ~CArrayDeque();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+ds::CArrayDeque::~CArrayDeque	arraydeque.h	/^CArrayDeque<T>::~CArrayDeque()$/;"	f	class:ds::CArrayDeque	signature:()
+ds::CSELinkedList	selinkedlist.h	/^class CSELinkedList$/;"	c	namespace:ds
+ds::CSELinkedList::AddBefore	selinkedlist.h	/^	CNode *AddBefore(CNode *pNode)$/;"	f	class:ds::CSELinkedList	access:protected	signature:(CNode *pNode)
+ds::CSELinkedList::BlockNumber	selinkedlist.h	/^	int BlockNumber;$/;"	m	class:ds::CSELinkedList	access:protected
+ds::CSELinkedList::CBDeque	selinkedlist.h	/^	class CBDeque : public CArrayDeque<T>$/;"	c	class:ds::CSELinkedList	inherits:CArrayDeque	access:protected
+ds::CSELinkedList::CBDeque::Add	selinkedlist.h	/^			virtual bool Add(T NewElem)$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:(T NewElem)
+ds::CSELinkedList::CBDeque::Add	selinkedlist.h	/^			virtual void Add(int Index,T NewElem)$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:(int Index,T NewElem)
+ds::CSELinkedList::CBDeque::CBDeque	selinkedlist.h	/^			CBDeque(int BlockNumber)$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:(int BlockNumber)
+ds::CSELinkedList::CBDeque::Resize	selinkedlist.h	/^			void Resize() {}$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:()
+ds::CSELinkedList::CBDeque::~CBDeque	selinkedlist.h	/^			virtual ~CBDeque() {}$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:()
+ds::CSELinkedList::CLocation	selinkedlist.h	/^	class CLocation$/;"	c	class:ds::CSELinkedList	access:protected
+ds::CSELinkedList::CLocation::Index	selinkedlist.h	/^			int    Index;$/;"	m	class:ds::CSELinkedList::CLocation	access:public
+ds::CSELinkedList::CLocation::Location	selinkedlist.h	/^			Location() {}$/;"	f	class:ds::CSELinkedList::CLocation	access:public	signature:()
+ds::CSELinkedList::CLocation::Location	selinkedlist.h	/^			Location(CNode *pNode,int Index)$/;"	f	class:ds::CSELinkedList::CLocation	access:public	signature:(CNode *pNode,int Index)
+ds::CSELinkedList::CLocation::pNode	selinkedlist.h	/^			CNode *pNode;$/;"	m	class:ds::CSELinkedList::CLocation	access:public
+ds::CSELinkedList::CNode	selinkedlist.h	/^	class CNode$/;"	c	class:ds::CSELinkedList	access:protected
+ds::CSELinkedList::CNode::CNode	selinkedlist.h	/^			CNode(int BlockNumber) : Deque(BlockNumber) {}$/;"	f	class:ds::CSELinkedList::CNode	access:public	signature:(int BlockNumber)
+ds::CSELinkedList::CNode::Deque	selinkedlist.h	/^			CBDequeu Deque;$/;"	m	class:ds::CSELinkedList::CNode	access:public
+ds::CSELinkedList::CNode::pNext	selinkedlist.h	/^			CNode *pNext;$/;"	m	class:ds::CSELinkedList::CNode	access:public
+ds::CSELinkedList::CNode::pPrev	selinkedlist.h	/^			CNode *pPrev;$/;"	m	class:ds::CSELinkedList::CNode	access:public
+ds::CSELinkedList::CSELinkedList	selinkedlist.h	/^	CSELinkedList(int BlockNumber) : Dummy(BlockNumber)$/;"	f	class:ds::CSELinkedList	access:public	signature:(int BlockNumber)
+ds::CSELinkedList::Clear	selinkedlist.h	/^	virtual void Clear()$/;"	f	class:ds::CSELinkedList	access:public	signature:()
+ds::CSELinkedList::Count	selinkedlist.h	/^	int Count;$/;"	m	class:ds::CSELinkedList	access:protected
+ds::CSELinkedList::Dummy	selinkedlist.h	/^	CNode Dummy;$/;"	m	class:ds::CSELinkedList	access:protected
+ds::CSELinkedList::Get	selinkedlist.h	/^	T Get(int Index)$/;"	f	class:ds::CSELinkedList	access:public	signature:(int Index)
+ds::CSELinkedList::GetLocation	selinkedlist.h	/^	void GetLocation(int Index,Location &Effl)$/;"	f	class:ds::CSELinkedList	access:protected	signature:(int Index,Location &Effl)
+ds::CSELinkedList::Remove	selinkedlist.h	/^	void Remove(CNode *pNode)$/;"	f	class:ds::CSELinkedList	access:protected	signature:(CNode *pNode)
+ds::CSELinkedList::Set	selinkedlist.h	/^	T Set(int Index,T NewElem)$/;"	f	class:ds::CSELinkedList	access:public	signature:(int Index,T NewElem)
+ds::CSELinkedList::Size	selinkedlist.h	/^	int Size()$/;"	f	class:ds::CSELinkedList	access:public	signature:()
+ds::CSELinkedList::~CSELinkedList	selinkedlist.h	/^	virtual ~CSELinkedList()$/;"	f	class:ds::CSELinkedList	access:public	signature:()
+operator +	array.h	/^		T* operator+(int i);$/;"	p	class:Array::CArray	access:public	signature:(int i)
+operator +	array.h	/^T* CArray<T>::operator+(int i)$/;"	f	class:Array::CArray	signature:(int i)
+operator =	array.h	/^		CArray<T>& operator=(CArray<T> &ArrayB);$/;"	p	class:Array::CArray	access:public	signature:(CArray<T> &ArrayB)
+operator =	array.h	/^CArray<T>& CArray<T>::operator=(CArray<T> &ArrayB)$/;"	f	class:Array::CArray	signature:(CArray<T> &ArrayB)
+operator []	array.h	/^		T& operator[](int Index);$/;"	p	class:Array::CArray	access:public	signature:(int Index)
+operator []	array.h	/^T& CArray<T>::operator[](int Index)$/;"	f	class:Array::CArray	signature:(int Index)
+pArray	array.h	/^		T *pArray;$/;"	m	class:Array::CArray	access:protected
+pNext	selinkedlist.h	/^			CNode *pNext;$/;"	m	class:ds::CSELinkedList::CNode	access:public
+pNode	selinkedlist.h	/^			CNode *pNode;$/;"	m	class:ds::CSELinkedList::CLocation	access:public
+pPrev	selinkedlist.h	/^			CNode *pPrev;$/;"	m	class:ds::CSELinkedList::CNode	access:public
+swap	array.h	/^		void swap(int i,int j);$/;"	p	class:Array::CArray	access:public	signature:(int i,int j)
+swap	array.h	/^void CArray<T>::swap(int i,int j)$/;"	f	class:Array::CArray	signature:(int i,int j)
+~CArray	array.h	/^		virtual ~CArray();$/;"	p	class:Array::CArray	access:public	signature:()
+~CArray	array.h	/^CArray<T>::~CArray()$/;"	f	class:Array::CArray	signature:()
+~CArrayDeque	arraydeque.h	/^		virtual ~CArrayDeque();$/;"	p	class:ds::CArrayDeque	access:public	signature:()
+~CArrayDeque	arraydeque.h	/^CArrayDeque<T>::~CArrayDeque()$/;"	f	class:ds::CArrayDeque	signature:()
+~CBDeque	selinkedlist.h	/^			virtual ~CBDeque() {}$/;"	f	class:ds::CSELinkedList::CBDeque	access:public	signature:()
+~CSELinkedList	selinkedlist.h	/^	virtual ~CSELinkedList()$/;"	f	class:ds::CSELinkedList	access:public	signature:()

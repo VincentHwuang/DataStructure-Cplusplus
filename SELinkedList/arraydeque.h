@@ -33,6 +33,8 @@ class CArrayDeque
 		T Get(int Index);
 		//Method to add an element at specified location
 		void Add(int Index,T NewElem);
+		//Method to remove an element of specified location and return its payload
+		T Remove(int Index);
 		//Method to enqueue an element at the end
 		virtual void EnqueueE(T NewElem);
 		//Method to enqueue an element at the first
@@ -179,9 +181,41 @@ T CArrayDeque<T>::DequeueE()
 }
 
 template<typename T>
+T CArrayDeque<T>::Remove(int Index)
+{
+	T Temp=Array[(IndexFlag+Index)%(Array.Length)];
+
+	if(Index < Count/2)//Shift Array[(IndexFlag)%(Array.Length)],...,Array[(IndexFlag+Index-1)%(Array.Length)] right one position
+	{
+		for(int i=Index;i>0;i--)
+		{
+			Array[(IndexFlag+Index)%(Array.Length)]=Array[(IndexFlag+Index-1)%(Array.Length)];
+		}
+		IndexFlag=(IndexFlag+1)%(Array.Length);
+	}
+	else				//Shift Array[(IndexFlag+Index+1)%(Array.Length)],...,Array[(IndexFlag+Count-1)%(Array.Length)] left one position
+	{
+		for(int i=Index;i<(Count-1);i++)
+		{
+			Array[(IndexFlag+i)%(Array.Length)]=Array[(IndexFlag+i+1)%(Array.Length)];
+		}
+	}
+	Count--;
+	//If there is too mush space,resize it
+	if(3*Count < Array.Length)
+	{
+		Resize();
+	}
+
+	return Temp;
+}
+
+template<typename T>
 void CArrayDeque<T>::PrintInfo()
 {
+	std::cout<<"[CArrayDeque]:----->"<<std::endl;
 	Array.PrintInfo();
+	std::cout<<"[CArrayDeque]:<-----"<<std::endl;
 	std::cout<<"IndexFlag:"<<IndexFlag<<std::endl<<"Count:"<<Count<<std::endl;
 }
 
