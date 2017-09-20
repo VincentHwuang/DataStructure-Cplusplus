@@ -8,6 +8,7 @@
 #define SYMMETRICMAT_H
 
 #include<iostream>
+#include<algorithm>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ class CSymmetricMat
 		{}
 		CSymmetricMat(const CSymmetricMat &SymMat) : CSymmetricMat(SymMat.m_Dim)
 		{
-			int ElemTotal{m_Dim*(Dim+1)/2};
+			int ElemTotal{m_Dim*(m_Dim+1)/2};
 			for(int i{0};i < ElemTotal;i++)
 			{
 				m_pBase[i]=SymMat.m_pBase[i];
@@ -58,9 +59,25 @@ class CSymmetricMat
 			delete m_pBase;
 			m_pBase=NULL;
 		}
+		//Method to get element of specified location
+		T &Get(int row,int column)
+		{
+			if(row < column)
+				std::swap(row,column);
+			return m_pBase[row*(row+1)/2+column-1];
+		}
+
+		//Debug function
+		void PrintInfo()
+		{
+			std::cout<<"m_Dim:"<<m_Dim<<std::endl;
+			int ElemTotal{m_Dim*(m_Dim+1)/2};
+			for(int i=0;i < ElemTotal;i++)
+			{
+				std::cout<<m_pBase[i]<<std::endl;;
+			}
+		}
 };
 }
-
-
 
 #endif
